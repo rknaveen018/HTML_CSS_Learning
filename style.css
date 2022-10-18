@@ -1,0 +1,122 @@
+body {
+    text-align: justify;
+}
+
+td {
+    text-align: center;
+}
+
+#nav{
+    position: sticky;
+    background-color: tomato;
+    height: 50px;
+    top: 0;
+    padding: 10px;   
+}
+
+.text {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+#nav > ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    text-decoration: none;
+}
+
+.grid-space {
+    background-color:lavender;
+    margin: 10px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;  
+    row-gap: 100px;
+    column-gap: 100px;
+}
+
+.grid-template-1 {
+    color: white;
+    width: 30px;
+    line-height: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+.grid-template-1:nth-child(1) {
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+.grid-template-1:nth-child(2) {
+    grid-column: 2 / 1;
+
+}
+
+.grid-template-1:nth-child(3) {
+    grid-row: 2 / 2;
+}
+
+#title {
+    text-decoration: underline;
+    background: linear-gradient(180deg,black, red ,rgb(131, 131, 3));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration-color: black;
+}
+
+.box {
+    height: 50px;
+    width: 50%;
+    border: 5px solid rgb(123, 116, 161);
+}
+
+.form-button {
+    margin-right: 10px;
+}
+.link {
+    text-decoration: none;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    border: 2px double rebeccapurple;
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.img-1 {
+    border: 2px solid black;
+}
+
+/* this will select whatever tag comes directly after except parent and child  */
+h4 + p {
+    color: blue;
+}
+
+/* this will select whatever tag comes within same parent */
+textarea ~ input {
+    color: red;
+    font-weight: bold;
+}
+ 
+/* this will select direct child */
+table > thead {
+    font-weight: bold;
+}
+/* this will select all the child */
+table td{
+    text-transform: capitalize;
+}
+
+
+
+
+
